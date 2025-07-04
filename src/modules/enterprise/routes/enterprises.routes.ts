@@ -63,7 +63,7 @@ enterpriseRouter.post(
             cnpj: Joi.string().pattern(/^\d{14}$/).required(),
             address: Joi.string().required(),
             telephone: Joi.string().required(),
-            activity_branch: Joi.string().required(),
+            actvity_branch: Joi.string().required(),
         },
     }),
     async (req, res, next) => {
@@ -87,7 +87,7 @@ enterpriseRouter.put(
             cnpj: Joi.string().pattern(/^\d{14}$/).required(),
             address: Joi.string().required(),
             telephone: Joi.string().required(),
-            activity_branch: Joi.string().required(),
+            actvity_branch: Joi.string().required(),
         },
     }),
     async (req, res, next) => {
